@@ -1,0 +1,9 @@
+{
+  "name": "doing-work",
+  "owner": { "name": "Doing Work LLC", "email": "contact@doingwork.work" },
+  "metadata": { "description": "Doing Work connectors: Home Service Quotes for homeowners and the Field Service Business Platform for shops." },
+  "plugins": [
+    { "name": "home-service-quotes", "source": "home-service-quotes", "description": "Get quotes from local shops for a home repair or project.", "category": "productivity" },
+    { "name": "field-service-business-platform", "source": "field-service-business-platform", "description": "See today's jobs and draft quotes and invoices for a field service shop on Doing Work.", "category": "productivity" }
+  ]
+}

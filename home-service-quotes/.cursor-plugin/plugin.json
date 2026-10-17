@@ -1,0 +1,9 @@
+{
+  "name": "home-service-quotes",
+  "version": "1.0.0",
+  "description": "Home Service Quotes by Doing Work. Use this when something at home needs fixing, replacing or building and you want quotes from local shops. You approve the job summary, the shop list and the message before anything is sent. Free for homeowners.",
+  "author": { "name": "Doing Work LLC", "email": "contact@doingwork.work" },
+  "homepage": "https://doingwork.work/connectors/",
+  "keywords": ["home repair", "quotes", "contractors", "plumber", "hvac", "electrician", "roofing", "handyman", "homeowner"],
+  "logo": "assets/logo.svg"
+}

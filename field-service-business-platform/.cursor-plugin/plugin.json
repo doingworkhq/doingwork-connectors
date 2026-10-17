@@ -1,0 +1,9 @@
+{
+  "name": "field-service-business-platform",
+  "version": "1.0.0",
+  "description": "Field Service Business Platform by Doing Work. Use this when you run a field service shop on Doing Work and want to see today's jobs or draft quotes and invoices from chat. Drafts wait in Doing Work for your review; nothing goes to a customer from chat.",
+  "author": { "name": "Doing Work LLC", "email": "contact@doingwork.work" },
+  "homepage": "https://doingwork.work/connectors/",
+  "keywords": ["field service", "plumbing", "hvac", "electrical", "landscaping", "quotes", "invoices", "scheduling"],
+  "logo": "assets/logo.svg"
+}
