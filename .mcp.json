@@ -1,6 +1,5 @@
 {
   "mcpServers": {
-    "doing-work-home": { "url": "https://app.doingwork.work/mcp/home" },
-    "doing-work-shop": { "url": "https://app.doingwork.work/mcp/shop" }
+    "doing-work": { "url": "https://doingwork.work/mcp" }
   }
 }
