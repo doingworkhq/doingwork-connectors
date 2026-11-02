@@ -1,17 +1,17 @@
 # Doing Work connectors
 
-Public manifests, docs and logos for Doing Work's two hosted MCP connectors. There is no server code here: both connectors run on app.doingwork.work and use OAuth sign-in, so there are no keys or variables to configure.
+Public manifests, docs and logos for Doing Work's two hosted MCP connectors. There is no server code here: both connectors use one hosted server at doingwork.work/mcp with OAuth sign-in, so there are no keys or variables to configure.
 
 | Connector | Who it's for | Remote URL | Official MCP Registry |
 |---|---|---|---|
-| [Home Service Quotes by Doing Work](home-service-quotes/) | Homeowners | `https://app.doingwork.work/mcp/home` | `work.doingwork/home` |
-| [Field Service Business Platform by Doing Work](field-service-business-platform/) | Home service shops on Doing Work | `https://app.doingwork.work/mcp/shop` | `work.doingwork/shop` |
+| [Home Service Quotes by Doing Work](home-service-quotes/) | Homeowners | `https://doingwork.work/mcp` | `work.doingwork/home` |
+| [Field Service Business Platform by Doing Work](field-service-business-platform/) | Home service shops on Doing Work | `https://doingwork.work/mcp` | `work.doingwork/shop` |
 
-- **Home Service Quotes:** get quotes from local shops for a home repair or project anywhere in the US. Free for homeowners, and free for shops to quote. We don't sell your contact info, and shops only get your phone and email if you pick them.
-- **Field Service Business Platform:** for home service shops on Doing Work. See today's jobs and draft quotes and invoices from chat. Drafts wait for the owner's review; nothing goes to a customer from chat.
+- **Home Service Quotes:** get quotes from shops on Doing Work for a home repair or project anywhere in the US. Free for customers and shops, with no lead or referral fees. A shop gets your contact details only when you book it.
+- **Field Service Business Platform:** for home service shops on Doing Work. Run the shop from chat: customers, jobs, quotes, invoices, payments, visits and photos, plus customer quote requests.
 
 ## Add to an assistant
-- Any MCP client that supports remote servers: add the URL above. `.mcp.json` at the repo root lists both.
+- Any MCP client that supports remote servers: add `https://doingwork.work/mcp`. One server has both the customer and the shop tools; `.mcp.json` at the repo root lists it.
 - Cursor: this repo is a Cursor plugin marketplace (`.cursor-plugin/marketplace.json`), with one plugin per folder.
 - Setup for other assistants: https://doingwork.work/agents/install/
 

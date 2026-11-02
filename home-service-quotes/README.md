@@ -1,38 +1,38 @@
 # Home Service Quotes by Doing Work
 
-Get quotes from local shops for a home repair or project, right from Cursor. Free for homeowners.
+Get quotes from shops on Doing Work for a home repair or project, right from Cursor. Free for customers and shops. Doing Work never charges lead or referral fees and never sets a price.
 
 ## What it does
-- Describe the job in plain words and add photos.
-- Check the job summary and address before any shop is found.
-- See local shops with a short reason for each, and remove any you don't want.
-- Approve the exact message and shop list before anything is sent.
-- Read quotes in the order they arrive.
+- Describe the job in plain words, with the address, and add at least one photo.
+- Send one request to the shops on Doing Work that serve your address and do that kind of work.
+- Read each shop's reply in its own words and prices.
+- Book one shop. If that shop asks for a deposit, you get a pay link for the amount it set.
 
-We don't sell your contact info, and your phone won't blow up with calls. Shops see your first name, town and job details, and only get your phone and email if you pick them.
+Photos have location data removed before they are stored. A shop gets your name and email, and your phone if you give it, only when you book it.
 
 ## Connect
-The plugin adds the remote MCP server `https://app.doingwork.work/mcp/home`. On first use, Cursor opens "Sign in with Doing Work" on app.doingwork.work. Enter your email and the 6-digit code we email you, then choose Allow. Cursor never sees the code. Sign-in is OAuth 2.1 with dynamic client registration and PKCE, so there is no key to configure. You can also choose read-only access, which can only list your requests and read quotes.
+The plugin adds the remote MCP server `https://doingwork.work/mcp`. On first use, Cursor opens "Sign in with Doing Work". Enter your email, open the sign-in link we email you, then choose Allow. Sign-in is OAuth 2.1 with dynamic client registration and PKCE, so there is no key to configure. Signing in with your email creates your account.
 
 ## Tools
 | Tool | What it does |
 |---|---|
-| quote_request_list | Lists your quote requests. Read only. |
-| quote_request_status | Reads the quotes shops sent. Read only. |
-| quote_request_update | Describes the job in a draft request. |
-| quote_request_add_photo | Adds a job photo. |
-| quote_request_confirm_summary | Confirms the job summary, after a preview. |
-| quote_request_find_shops | Saves a short list of local shops. Contacts no one. |
-| quote_request_approve_and_send | Emails the shops you approved, after a preview and your confirmation. |
-| quote_request_pick_shop | Hires one shop, after a preview and your confirmation. Shares your phone and email with that shop and closes the request. Can't be undone. |
+| network_info | How requests work: area, kinds of work, limits and the free pledge. Read only. |
+| homeowner_createRequest | Starts a draft request: the work in your own words, the address and what you need. |
+| homeowner_addPhoto | Adds a photo to a draft. |
+| homeowner_sendRequest | Sends the request to matching shops. Ask the user first. |
+| homeowner_listRequests | Lists your requests. Read only. |
+| homeowner_getRequest | Reads your request and every reply so far. Read only. |
+| homeowner_pickReply | Books one shop's reply and shares your contact details with that shop. Ask the user first. |
+| homeowner_withdrawRequest | Withdraws a request you have not booked. |
+| homeowner_reportNoShow | Tells Doing Work the booked shop did not show up. |
 
 ## Try it
 - "My water heater is leaking. Can you get me quotes?"
-- "Find a few local roofers to look at a leak over my garage."
-- "Did anyone send a quote on my fence job?"
+- "Get a few roofers to look at a leak over my garage."
+- "Did anyone reply on my fence job?"
 
 ## Limits
-US only. Shop coverage depends on your area and the trade; the connector says so when it finds none.
+US addresses only. If no shop on Doing Work near you takes that kind of work yet, your request stays open and you can withdraw it any time. Requests you don't book are deleted after 90 days.
 
 ## Links
 - Docs: https://doingwork.work/connectors/

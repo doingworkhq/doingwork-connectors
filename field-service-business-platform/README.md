@@ -1,21 +1,24 @@
 # Field Service Business Platform by Doing Work
 
-For shop owners on Doing Work. See today's jobs and draft quotes and invoices from Cursor.
+For shops on Doing Work. Run the shop from Cursor: customers, jobs, quotes, invoices, payments, visits and photos.
 
 ## Connect
-The plugin adds the remote MCP server `https://app.doingwork.work/mcp/shop`. Cursor opens "Sign in with Doing Work" on app.doingwork.work; enter your email and the 6-digit code we email you, then choose Allow. Connecting doesn't create an account. No shop yet? Create one at https://app.doingwork.work/signup first.
+The plugin adds the remote MCP server `https://doingwork.work/mcp`. Cursor opens "Sign in with Doing Work"; enter your email, open the sign-in link we email you, then choose Allow. No shop yet? Start one at https://doingwork.work/start/.
 
 ## Tools
+The server lists every tool it has when your assistant connects. Each tool is the same action as the Doing Work REST API. A few examples:
+
 | Tool | What it does |
 |---|---|
-| list_jobs_today | Today's jobs: who, where and when. Read only. |
-| create_quote | Saves a draft quote in Doing Work. Nothing is sent to the customer. |
-| create_invoice | Drafts an invoice from a finished job for you to review. It is not issued, sent or charged. |
+| jobs_list | Lists jobs. Read only. |
+| quotes_create | Creates a quote. |
+| invoices_createFromQuote | Makes an invoice from a quote. |
+| network_inbox | Customer quote requests sent to your shop. |
 
 ## Try it
 - "What jobs do we have today?"
 - "Draft a quote for the Smith deck: 2 days labor and materials."
-- "Draft the invoice for the Johnson job."
+- "Make the invoice for the Johnson job."
 
 ## Links
 - Docs: https://doingwork.work/connectors/
